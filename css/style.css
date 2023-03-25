@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*-----RESETEO-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----BODY-----*/
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+/*-----FIN BODY-----*/
+/*-----FIN RESETEO-----*/
+/*------BARRA DE NAVEGACION-----*/
+.navbar-nav a{  
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.navbar-nav a:hover{
+    color: #760d46;
+}
+/*------FIN BARRA DE NAVEGACION-----*/
+/*-----MAIN-----*/
+.main{
+    background-color: #f8f7f5;
+}
+/*-----FIN MAIN-----*/
+/*-----PIE DE PAGINA-----*/
+.pie-de-pagina{
+    width: 100%;
+    height: 150px;
+    background-color: #ed8d8e;
+    padding: 20px;
+    color: #f8f7f5;
+}
+.pie-de-pagina .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redsocial{
+    width: 50px;
+    margin: 0px 50px;
+}
+.redsocial-dos{
+    width:45px;
+    margin: 0px 50px;
+}
+.pie-de-pagina p{
+    text-align: center;
+    margin-top: 20px;
+}
+@media(max-width:460px){
+    .redsocial{
+        width: 40px;
+        margin: 0px 20px;
+    }
+    .redsocial-dos{
+        width: 35px;
+        margin: 0px 20px;
+    }
+}
+
+/*------FIN DE PIE DE PAGINA------*/
+/*-----------------------------------------------------INICIO--------------------------------------------*/
+/*-----PORTADA INICIO-----*/
+.portada-inicio{
+    background-image: url(../multimedia/img/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #760d46;
+}
+.portada-inicio .portada-titulo h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+.portada-inicio .portada-titulo h2{
+    font-size: 30px;
+}
+.portada-inicio .portada-subtitulo h3{
+    font-size: 25px;
+}
+.portada-inicio .portada-subtitulo button{
+    border: none;
+    color: #760d46;
+    border-radius: 10px;
+    background-color: #ed8d8e;
+    font-size: 20px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+.portada-inicio .portada-subtitulo button:hover{
+    background-color: #760d46;
+    color: #ed8d8e;
+}
+/*-----FIN PORTADA INICIO-----*/
+
+/*-----TARJETAS INICIO------*/
+.tarjeta{
+    background-color: #ed8d8e;
+    color: #760d46;
+    border: #760d46 solid 2px;
+    border-radius: 5px;
+}
+.tarjeta__titulo{
+    font-size: 25px;
+    font-weight: 600;
+}
+.tarjeta__texto{
+    font-size: 16px;
+    font-weight: 600;
+}
+.tarjeta .tarjeta__img{
+    width: 100%;
+}
+.tarjeta  .tarjeta__boton{
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #f8f7f5;
+    color: #760d46;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.tarjeta .tarjeta__boton:hover{
+    background-color: #760d46;
+    color: #f8f7f5;
+}
+/*-----FIN TARJETA INICIO-----*/
+/*------CLIENTAS-----*/
+.clientas{
+    background-image: url(../multimedia/img/brillos.jpg);
+    color: #760d46;
+    font-weight: 900;
+    font-size: 50px;
+}
+/*------FIN CLIENTAS-----*/
+
+/*-----------------------------------------------------SERVICIOS-------------------------------------------*/
+
+/*-------PORTADA SERVICIOS-----*/
+.portada-servicios{
+    background-image: url(../multimedia/img/servicios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #760d46;
+}
+.portada-servicios h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+/*-----FIN PORTADA SERVICIOS-----*/
+/*-----TARJETA SERVICIOS-----*/
+.card{
+    border: #760d46 solid 1px;
+    border-radius: 5px;
+}
+.card-body{
+    color: #760d46;
+}
+.card-body .card-title{
+    font-size: 25px;
+    font-weight: 800;
+}
+.card-body .card-text{
+    font-size: 16px;
+}
+/*-----FIN TARJETA SERVICIOS-----*/
+@media(max-width:400px){
+    .portada-servicios h1{
+        font-weight: 900;
+        font-size: 60px;
+    }
+}
+/*--------------------------------------------------------TURNOS-----------------------------------------------*/
+/*-----PORTADA TURNOS-----*/
+.portada-turnos{
+    background-image: url(../multimedia/img/turnos-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #760d46;
+}
+.portada-turnos h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+/*-----FIN PORTADA TURNOS-----*/
+/*ANUNCIO TURNOS*/
+.anuncio{
+    color: #760d46;
+    font-weight: bold;
+    width: 100%;
+    border: #760d46 solid;
+    background-color: #ed8d8e;
+}
+/*-----FIN ANUNCIO TURNOS-----*/
+/*-----FORM TURNOS-----*/
+.turnos-form{
+    background-color: #ed8d8e;
+    color: #f8f7f5;
+    border-radius: 5px;
+    font-weight: 600;
+    border: #760d46 solid 2px;
+}
+.turnos-form section .form-input{
+    background-color: #ed8d8e;
+    color: #f8f7f5;
+    border: none;
+    border-bottom: #f8f7f5 solid 2px;
+} 
+.turnos-form section .form-select{
+    background-color: #f8f7f5;
+    color: #760d46;
+    font-weight: 600;
+}
+.turnos-form section .form-button{
+    color: #760d46;
+    background-color: #f8f7f5;
+    border-radius: 5px;
+    border: #760d46 solid 2px;
+}
+.turnos-form section .form-button:hover{
+    color: #ed8d8e;
+    font-weight: 900;
+    background-color: #760d46;
+    border: #f8f7f5 solid 1px;
+    
+}
+/*-----FIN FORMS TURNOS-----*/
+/*-----------------------------------------------LOCAL----------------------------------------------*/
+/*-----PORTADA LOCAL-----*/
+.portada-local{
+    background-image: url(../multimedia/img/local-portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #760d46;
+
+}
+.portada-local h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+/*-----FIN PORTADA LOCAL-----*/
+/*-----CONTENEDOR LOCAL MAPA-----*/
+.contenedor-local{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.carousel{
+    margin: 10px;
+}
+.mapa-local{
+    margin: 10px;
+}
+/*-----FIN CONTENEDOR LOCAL MAPA-----*/
+/*-----MEDIA QUERIES LOCAL-----*/
+@media(max-width:1237px){
+    .contenedor-local{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mapa-local{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .mapa-local iframe{
+        width: inherit;
+    }
+    .carousel{
+        width: 90%;
+        margin: auto;
+    }
+}
+/*-----FIN MEDIA QUERIES LOCAL-----*/
+
+/*---------------------------------------------PREGUNTAS FRECUENTES--------------------------------------------*/
+/*-----PORTADA PREGUNTAS FRECUENTES-----*/
+.portada-preguntas{
+    background-image: url(../multimedia/img/preguntas-frecuentes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: #760d46;
+
+}
+.portada-preguntas h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+/*-----FIN PORTADA PREGUNTAS FRECUENTES-----*/
+/*-----PREGUNTAS FRECUENTES-----*/
+.accordion{
+   border-radius: 0px;
+   border: #760d46 solid 1px;
+}
+.accordion-item{
+     background-color: #ed8d8e;
+}
+
+.accordion-button{
+    background-image: url(../multimedia/img/brillos.jpg);
+    color: #760d46;
+    font-size: 30px;
+    font-weight: 800;
+    border: #760d46 solid 1px;
+}
+/*-----FIN PREGUNTAS FRECUENTES-----*/
+/*-----CONTACTO-----*/
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../multimedia/img/fondo-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.trabajo{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #760d46;
+}
+/*-----FIN CONTACTO-----*/
+/*FORM CONTACTOS*/
+.consulta{
+    color: #760d46;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 20px;
+    padding: 15px;
+}
+.form-contactos{
+    background-color: #ed8d8e;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid #760d46;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "consulta consulta"
+                        " nombre   nombre"
+                        "apellido  apellido"
+                        "telefono  email"
+                        "mensaje   mensaje"
+                        "boton1     boton2";
+}
+.form-contactos h2{
+    grid-area: consulta;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-contactos label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #760d46;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.form-contactos label input{
+    background-color: #ed8d8e;
+    border: none;
+    color: #f8f7f5;
+    border-bottom: 1px solid #f8f7f5;
+}
+.form-contactos label:nth-child(2){
+    grid-area: nombre;
+}
+.form-contactos label:nth-child(3){
+    grid-area: apellido
+}
+.form-contactos label:nth-child(4){
+    grid-area: telefono;
+}
+.form-contactos label:nth-child(5){
+    grid-area: email;
+}
+.form-contactos textarea{
+    grid-area: mensaje;
+    padding: 10px;
+    background-color: #ed8d8e;
+    border: none;
+    color: #f8f7f5;
+    border-bottom: 1px solid #f8f7f5;
+}
+.form-contactos .boton1{
+    grid-area: boton1;
+}
+.form-contactos .boton2{
+    grid-area: boton2;
+}
+.form-contactos .boton2 , .form-contactos .boton1{
+    background-color: #f8f7f5;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #760d46;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s ;
+}
+.form-contactos .boton2:hover , .form-contactos .boton1:hover{
+    background-color: #760d46;
+    color: #f8f7f5;
+}
+/*-----FIN FORMSCONTACTO-----*/
+/*-----MEDIA QUERIES CONTACTO-----*/
+@media(max-width:600px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:500px){
+    .form-contactos{
+        grid-template-columns: 1fr;
+        grid-template-areas: "consulta"
+                             " nombre"
+                             "apellido"
+                             "telefono"
+                             "email"
+                             "mensaje"
+                             "boton1"
+                             "boton2";
+    }
+    .portada-preguntas h1{
+        font-size: 50px;
+    }
+}
+/*-----FIN MEDIA QUERIES CONTACTO-----*/

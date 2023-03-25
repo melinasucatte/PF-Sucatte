@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pretty Nails Turnos</title>
+    <link rel="shortcut icon" href="../multimedia/img/LOGO.png">
+</head>
+<body>
+     <header>
+           <!--BARRA DE NAVEGACION-->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ed8d8e;" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../multimedia/img/logo.png" alt="logo" width="120px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">INICIO</a>
+                <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                <a class="nav-link" href="./turnos.html">TURNOS</a>
+                <a class="nav-link" href="./local.html">LOCAL</a>
+                <a class="nav-link" href="./preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!--FIN BARRA DE NAVEGACION-->
+    <main>
+        <!--PORTADA TURNOS-->
+        <section class="portada-turnos d-flex justify-content-center align-items-star">
+          <h1 class="p-3">TURNOS</h1>
+        </section>
+        <!--FIN PORTADA TURNOS-->
+        <!--FORM TURNOS-->
+        <section class="container-fluid"> 
+            <p class="anuncio text-center p-2 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, architecto dolore distinctio a impedit quisquam, autem doloribus similique placeat neque blanditiis. Eum magnam autem perspiciatis magni iste suscipit! Corrupti, debitis!</p>
+            <form class="turnos-form row d-flex flex-row justify-content-center m-2">
+              <img class="col-xl-7" src="../multimedia/img/turnoscuatro.jpg" alt="turnos">
+              <section class="col-xl-4">
+                <form action="" class="form-turnos">
+                  <div class="mb-3 d-flex flex-column justify-content-around align-items-star">
+                    <label for="exampleFormControlInput1" class="form-label m-2">NOMBRE:</label>
+                    <input type="text" class="form-input m-2" id="exampleFormControlInput1" required>
+                  </div>
+                  <div class="mb-3 d-flex flex-column justify-content-around align-items-star">
+                    <label for="exampleFormControlInput1" class="form-label m-2">APELLIDO:</label>
+                    <input type="text" class="form-input m-2" id="exampleFormControlInput1" required>
+                  </div>
+                  <div class="mb-3 d-flex flex-column justify-content-around align-items-star">
+                    <label for="fecha" class="form-label m-2">FECHA:</label>
+                    <input id="fecha" type="date" class="form-input m-2" required>
+                  </div>
+                  <div class="mb-3 d-flex flex-column justify-content-around align-items-star">
+                    <label for="hora" class="form-label m-2">HORA:</label>
+                    <input type="time" id="hora" class="form-input m-2" required max="19:00:00" min="09:00:00"/>
+                  </div>
+                  <div class="mb-3 d-flex flex-column justify-content-around align-items-star">
+                    <label for="servicio" class="form-label m-2">SERVICIO:</label>
+                    <select class="form-select m-2" aria-label="Default select example" required>
+                      <option selected>SELECCIONE UN SERVICIO</option>
+                      <option value="ES">ESMALTADO SEMI-PERMANENTE</option>
+                      <option value="KA">KAPPING ACRILICO</option>
+                      <option value="EA">ESCULPIDA ACRILICA</option>
+                    </select>
+                  </div>
+                  <button id="submit" class="form-button m-2 p-2 ">ENVIAR A WHATSAPP</button>
+                </form>
+              </section>
+
+            </form>
+        </section>
+        <!--FIN FORM TURNOS-->
+    </main>
+    <!--PIE DE PAGINA-->
+    <footer class="pie-de-pagina">
+        <div class="redes">
+            <a href="https://instagram.com/nailss_mely?igshid=YmMyMTA2M2Y=" target="_blank"><img class="redsocial" src="../multimedia/img/instagram.png" alt="logo instagram" ></a>
+            <a href="https://www.facebook.com/profile.php?id=100069513377107&mibextid=LQQJ4d" target="_blank"><img class="redsocial-dos" src="../multimedia/img/facebook.png" alt="logo facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="redsocial" src="../multimedia/img/whatsapp.png" alt="logo whatsapp"></a>
+        </div>
+        <p>©2023 Pretty Nails</p>
+    </footer>
+    <!--FIN PIE DE PAGINA-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

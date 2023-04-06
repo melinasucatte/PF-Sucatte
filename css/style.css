@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*-----BODY-----*/
 body {
   font-family: "Quicksand", sans-serif;
@@ -18,13 +19,14 @@ body {
   font-weight: 900;
   color: #f8f7f5;
 }
+
 .navbar-nav a:hover {
   color: #760d46;
 }
-.navbar div button{
+
+.navbar div button {
   color: #f8f7f5;
 }
-
 
 /*------FIN BARRA DE NAVEGACION-----*/
 /*-----MAIN-----*/
@@ -160,7 +162,8 @@ body {
   font-weight: 900;
   font-size: 50px;
 }
-.fondo{
+
+.fondo {
   background-image: url(../multimedia/img/fondo-contacto.jpg);
 }
 
@@ -202,12 +205,6 @@ body {
 }
 
 /*-----FIN TARJETA SERVICIOS-----*/
-@media (max-width: 400px) {
-  .portada-servicios h1 {
-    font-weight: 900;
-    font-size: 60px;
-  }
-}
 /*--------------------------------------------------------TURNOS-----------------------------------------------*/
 /*-----PORTADA TURNOS-----*/
 .portada-turnos {
@@ -226,9 +223,10 @@ body {
 
 /*-----FIN PORTADA TURNOS-----*/
 /*ANUNCIO TURNOS*/
-.contenido-anuncio{
+.contenido-anuncio {
   background-image: url(../multimedia/img/fondo-contacto.jpg);
 }
+
 .anuncio {
   color: #760d46;
   font-weight: bold;

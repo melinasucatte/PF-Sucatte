@@ -1,0 +1,7 @@
+.portada-preguntas {
+    background-image: url(../multimedia/img/preguntas-frecuentes.jpg);
+    @extend %bg;
+      h1 {
+        @extend %size;
+      }
+  }

@@ -1,0 +1,12 @@
+@mixin size($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin color($bg,$color){
+    background-color: $bg;
+    color: $color;
+}
+@mixin mp($m,$p){
+    margin: $m;
+    padding: $p;
+}

@@ -1,0 +1,83 @@
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../multimedia/img/fondo-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .trabajo {
+      text-align: center;
+      font-size: ($font-tamanio/2)+5;
+      font-weight: ($grosor-letra)-200;
+      color: $color-violeta;
+    }
+    .form-contactos {
+        background-color: $bg-rosa;
+        @include mp(10px,0);
+        @extend %bordes;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "consulta consulta"
+                            " nombre   nombre" 
+                            "apellido  apellido" 
+                            "telefono  email" 
+                            "mensaje   mensaje"
+                            "boton1     boton2";
+            .consulta {
+                color: $color-violeta;
+                font-weight: bolder;
+                font-size: ($font-tamanio/2)-10;
+                @include mp(20px,15px);
+            }
+            h2 {
+                grid-area: consulta;
+                text-align: center;
+                font-size: ($font-tamanio/2)-5;
+                font-weight: ($grosor-letra)-200;
+            }
+            label {
+                display: flex;
+                flex-direction: column;
+                @include mp(0,10px);
+                color: $color-violeta;
+                font-size: ($font-tamanio/2)-15;
+                font-weight: ($grosor-letra)-200;
+                    input {
+                        border: none;
+                        @include color($bg-rosa,$color-blanco);
+                        border-bottom: 1px solid $bg-blanco;
+                    }
+                    &:nth-child(2) {
+                        grid-area: nombre;
+                    }
+                    &:nth-child(3) {
+                        grid-area: apellido;
+                    }
+                    &:nth-child(4) {
+                        grid-area: telefono;
+                    }
+                    &:nth-child(5) {
+                        grid-area: email;
+                    }
+                        
+                    
+            }
+            textarea {
+                grid-area: mensaje;
+                @include mp(0,10px);
+                @include color($bg-rosa,$color-blanco);
+                border: none;
+                border-bottom: 1px solid $bg-blanco;
+            }
+            .boton1 {
+                grid-area: boton1;
+                @extend %btn-contactos;
+            }
+            .boton2 {
+                grid-area: boton2;
+                @extend %btn-contactos;
+        }
+    }
+}

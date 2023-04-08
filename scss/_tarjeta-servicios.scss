@@ -1,0 +1,13 @@
+.card {
+    @extend %bordes;
+      .card-body {
+          color: $color-violeta;
+              .card-title {
+                  font-size: ($font-tamanio/2)-10;
+                  font-weight: ($grosor-letra)-100;
+              }
+              .card-text {
+                  font-size: ($font-tamanio/2)-19;
+              }
+      }
+  }

@@ -1,0 +1,16 @@
+.accordion {
+    border-radius: 0px;
+    border: $bg-violeta solid 1px;
+      .accordion-item {
+          background-color: $bg-rosa;
+          .accordion-header{
+              .accordion-button {
+                  background-image: url(../multimedia/img/brillos.jpg);
+                  color: $color-violeta;
+                  font-size: ($font-tamanio/2)-5;
+                  font-weight: ($grosor-letra)-100;
+                  border: $bg-violeta solid 1px;
+              }
+          }
+      }
+  }

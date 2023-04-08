@@ -1,0 +1,11 @@
+.navbar-nav a {
+    font-family: $font;
+    font-weight: $grosor-letra;
+    color: $color-blanco;
+      &:hover{
+          color: $color-violeta;
+      }
+  }
+  .navbar div button{
+    color: $color-blanco;
+  }

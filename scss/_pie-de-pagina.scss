@@ -1,0 +1,21 @@
+.pie-de-pagina {
+    @include size(100%,150px);
+    @include mp(0,20px);
+    @include color($bg-rosa,$color-blanco);
+      .redes {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          .redsocial {
+              width: 50px;
+              @include mp(0px 20px,0);
+          }
+          .redsocial-dos {
+              width: 45px;
+            } 
+      }
+      p {
+          text-align: center;
+          margin-top: 20px;
+      }  
+  }

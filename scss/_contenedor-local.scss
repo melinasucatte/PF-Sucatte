@@ -1,0 +1,12 @@
+.contenedor-local {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: center;
+      .mapa-local {
+          @include mp(10px,0);
+      }
+      .carousel {
+        @include mp(10px,0);
+      }
+  }

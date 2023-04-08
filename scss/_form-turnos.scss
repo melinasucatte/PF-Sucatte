@@ -1,0 +1,25 @@
+.turnos-form {
+    @include color($bg-rosa,$color-blanco);
+    font-weight: ($grosor-letra)-300;
+    @extend %bordes;
+      section{
+          .form-input {
+              @include color($bg-rosa,$color-blanco);
+              border: none;
+              border-bottom: $bg-blanco solid 2px;
+          }
+          .form-select {
+              @include color($bg-blanco,$color-violeta);
+              font-weight: ($grosor-letra)-300;
+          }
+          .form-button {
+              @include color($bg-blanco,$color-violeta);
+              @extend %bordes;
+                  &:hover {
+                      font-weight: $grosor-letra;
+                      @include color($bg-violeta,$color-rosa);
+                      border: $bg-blanco solid 1px;
+                    }
+          }
+      }
+  }

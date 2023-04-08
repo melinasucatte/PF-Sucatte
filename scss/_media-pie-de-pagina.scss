@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+    .pie-de-pagina{
+        .redes{
+            .redsocial {
+            width: 40px;
+            @include mp(0px 20px,0);
+            }
+            .redsocial-dos {
+            width: 35px;
+            @include mp(0px 20px,0);
+            }
+        }
+    }
+}

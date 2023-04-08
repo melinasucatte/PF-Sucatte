@@ -1,0 +1,28 @@
+.tarjeta {
+    @include color($bg-rosa,$color-violeta);
+    @extend %bordes;
+      .tarjeta__titulo {
+          font-size: ($font-tamanio/2)-10;
+          font-weight: ($grosor-letra)-300;
+      }
+      
+      .tarjeta__img {
+          width: 100%;
+      } 
+      .tarjeta__texto {
+          font-size: ($font-tamanio/2)-19;
+          font-weight: ($grosor-letra)-300;
+        } 
+        .tarjeta__boton {
+          @include mp(10px,5px 15px);
+          @include color($bg-blanco,$color-violeta);
+          border: none;
+          border-radius: 5px;
+          font-size: ($font-tamanio/2)-20;
+          font-weight: ($grosor-letra)-400;
+          transition: 0.5s;
+              &:hover {
+                  @include color($bg-violeta,$color-blanco);
+                }
+        }
+  }

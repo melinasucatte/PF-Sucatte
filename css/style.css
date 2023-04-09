@@ -15,6 +15,7 @@
 .portada-preguntas h1, .portada-local h1, .portada-turnos h1, .portada-servicios h1, .portada-inicio .portada-titulo h1 {
   font-weight: 900;
   font-size: 70px;
+  text-shadow: 2px 4px 2px #BD1470;
 }
 
 .contacto .form-contactos .boton2, .contacto .form-contactos .boton1 {
@@ -31,6 +32,11 @@
 .contacto .form-contactos .boton2:hover, .contacto .form-contactos .boton1:hover {
   background-color: #760d46;
   color: #f8f7f5;
+}
+
+.contacto .form-contactos, .turnos-form, .card, .tarjeta {
+  -webkit-box-shadow: 0px 5px 23px 5px rgba(118, 13, 70, 0.67);
+  box-shadow: 0px 5px 23px 5px rgba(118, 13, 70, 0.67);
 }
 
 * {
@@ -50,6 +56,7 @@ body {
 }
 .navbar-nav a:hover {
   color: #760d46;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 2px 2px rgba(118, 13, 70, 0);
 }
 
 .navbar div button {
@@ -100,6 +107,9 @@ body {
 }
 .portada-inicio {
   background-image: url(../multimedia/img/portada.png);
+}
+.portada-inicio .portada-titulo h1 {
+  text-shadow: 2px 4px 2px #BD1470;
 }
 .portada-inicio .portada-titulo h2 {
   font-size: 35px;
@@ -167,6 +177,7 @@ body {
   color: #760d46;
   font-weight: 900;
   font-size: 50px;
+  text-shadow: 2px 4px 2px #BD1470;
 }
 
 .portada-servicios {

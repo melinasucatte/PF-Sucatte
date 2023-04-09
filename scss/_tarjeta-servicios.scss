@@ -1,5 +1,6 @@
 .card {
     @extend %bordes;
+    @extend %sombra-cajas;
       .card-body {
           color: $color-violeta;
               .card-title {

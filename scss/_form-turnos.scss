@@ -2,6 +2,7 @@
     @include color($bg-rosa,$color-blanco);
     font-weight: ($grosor-letra)-300;
     @extend %bordes;
+    @extend %sombra-cajas;
       section{
           .form-input {
               @include color($bg-rosa,$color-blanco);

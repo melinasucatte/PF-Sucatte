@@ -4,6 +4,7 @@
       .portada-titulo{
           h1 {
             @extend %size;
+            text-shadow: $sombra-portada;
           }
           h2 {
               font-size: $font-tamanio/2;

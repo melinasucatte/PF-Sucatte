@@ -4,6 +4,7 @@
     color: $color-blanco;
       &:hover{
           color: $color-violeta;
+          text-shadow: $sombra;
       }
   }
   .navbar div button{

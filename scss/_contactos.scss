@@ -17,6 +17,7 @@
         background-color: $bg-rosa;
         @include mp(10px,0);
         @extend %bordes;
+        @extend %sombra-cajas;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "consulta consulta"

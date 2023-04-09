@@ -1,6 +1,7 @@
 .tarjeta {
     @include color($bg-rosa,$color-violeta);
     @extend %bordes;
+    @extend %sombra-cajas;
       .tarjeta__titulo {
           font-size: ($font-tamanio/2)-10;
           font-weight: ($grosor-letra)-300;

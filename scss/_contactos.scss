@@ -9,9 +9,10 @@
     background-size: cover;
     .trabajo {
       text-align: center;
-      font-size: ($font-tamanio/2)+5;
+      font-size: ($font-tamanio/2);
       font-weight: ($grosor-letra)-200;
       color: $color-violeta;
+      text-shadow: $sombra-portada;
     }
     .form-contactos {
         background-color: $bg-rosa;
@@ -81,4 +82,27 @@
                 @extend %btn-contactos;
         }
     }
+}
+
+@media (max-width: 810px) {
+    .contacto {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px) {
+    .contacto{
+        .form-contactos {
+        grid-template-columns: 1fr;
+        grid-template-areas: "consulta" 
+                            " nombre" 
+                            "apellido"
+                            "telefono" 
+                            "email" 
+                            "mensaje" 
+                            "boton1" 
+                            "boton2";
+        }
+    }
+
 }

@@ -7,6 +7,7 @@
     <meta name="keywords" content="local ,Ituzaingó, Provincia, Buenos Aires,Pretty Nails">
     <meta name="description" content="Ubicación local Pretty Nails en Ituzaingó, Provincia de Buenos Aires">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Local-Pretty Nails</title>
     <link rel="shortcut icon" href="../multimedia/img/LOGO.png">
@@ -21,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav d-flex align-items-end">
                     <a class="nav-link" href="../index.html">INICIO</a>
                     <a class="nav-link" href="./servicios.html">SERVICIOS</a>
                     <a class="nav-link" href="./turnos.html">TURNOS</a>
@@ -35,21 +36,21 @@
     </header>
     <main>
         <!--PORTADA LOCAL-->
-        <section class="portada-local d-flex justify-content-center align-items-star">
-            <h1 class="m-5">LOCAL</h1>
-        </section>
+        <div class="portada-local d-flex justify-content-center align-items-star">
+            <h1 class="m-5 focus-in-expand">LOCAL</h1>
+        </div>
         <!--FIN PORTADA LOCAL-->
         <section class="contenedor-local">
             <!--MAPA LOCAL-->
-            <div class="mapa-local">
+            <div class="mapa-local"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52510.51225189753!2d-58.72647655953038!3d-34.657051140841546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf7809861d5d%3A0x6bc97859fd9d3d86!2sItuzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1679636257828!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!--FIN MAPA LOCAL-->
             <!--CAROUSEL DE FOTOS-->
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../multimedia/img/local.jpg" class="d-block w-100" alt="local">
+                        <img src="../multimedia/img/local.jpg" class="d-block w-100" alt="nuestro local">
                     </div>
                     <div class="carousel-item">
                         <img src="../multimedia/img/nombre-local.jpg" class="d-block w-100" alt="nombre local">
@@ -67,8 +68,8 @@
             <!--FIN CAROUESEL DE FOTOS-->
         </section>
         <div class=" contenido-anuncio d-flex d-flex flex-column justify-content-center align-items-center my-2">
-            <p class="anuncio text-center col-10 m-2 ">ENCONTRANOS EN ITUZAINGÓ, PROVINCIA DE BUENOS AIRES.</p>
-            <p class="anuncio text-center col-10">Tes estamos esperando en nuestro local, listas para atenderte y brindar un buen servicio, no te olvides de sacar tu turno!</p>
+            <p class="anuncio text-center col-8 m-2" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">ENCONTRANOS EN ITUZAINGÓ, PROVINCIA DE BUENOS AIRES.</p>
+            <p class="anuncio text-center col-8" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">Tes estamos esperando en nuestro local, listas para atenderte y brindar un buen servicio, no te olvides de sacar tu turno!</p>
         </div>
     </main>
     <!--PIE DE PAGINA-->
@@ -82,5 +83,9 @@
     </footer>
     <!--FIN PIE DE PAGINA-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

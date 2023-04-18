@@ -10,3 +10,23 @@
         @include mp(10px,0);
       }
   }
+  @media (max-width: 1237px) {
+    .contenedor-local {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .mapa-local {
+          width: 90%;
+          display: flex;
+          justify-content: center;
+              iframe {
+                  width: inherit;
+              }
+      }
+      .carousel {
+          width: 90%;
+          @include mp(auto,0);
+        }
+    }
+  }

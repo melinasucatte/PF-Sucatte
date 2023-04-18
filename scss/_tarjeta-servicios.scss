@@ -1,14 +1,27 @@
 .card {
     @extend %bordes;
     @extend %sombra-cajas;
+    height: 700px;
       .card-body {
           color: $color-violeta;
               .card-title {
-                  font-size: ($font-tamanio/2)-10;
-                  font-weight: ($grosor-letra)-100;
+                    font-size: ($font-tamanio/2)-5;
+                    font-weight: $grosor-letra;
+                    text-shadow: $sombra-portada;
               }
               .card-text {
-                  font-size: ($font-tamanio/2)-19;
+                font-size: ($font-tamanio/2)-15;
+                  strong{
+                    color: $color-blanco;
+                    font-size: ($font-tamanio/2)-10;
+                    text-shadow: $sombra-portada;
+                  }
               }
       }
-  }
+}
+@media(max-width:768px){
+    .card{
+        height: auto;
+    }
+}
+

@@ -7,6 +7,7 @@
     <meta name="keywords" content="servicios ,esmaltado ,semipermanente ,kapping ,esculpidas ,acrílico ,service ">
     <meta name="description" content="Contamos con tres servicios para elegir como lucir tus uñas">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Servicios-Pretty Nails</title>
     <link rel="shortcut icon" href="../multimedia/img/LOGO.png">
@@ -21,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav d-flex align-items-end">
                     <a class="nav-link" href="../index.html">INICIO</a>
                     <a class="nav-link" href="./servicios.html">SERVICIOS</a>
                     <a class="nav-link" href="./turnos.html">TURNOS</a>
@@ -35,57 +36,45 @@
     </header>
     <main>
         <!--PORTADA SERVICIOS-->
-        <section class="portada-servicios d-flex justify-content-center align-items-center">
-            <h1 class="p-2">SERVICIOS</h1>
-        </section>
+        <div class="portada-servicios d-flex justify-content-center align-items-center">
+            <h1 class="p-2 focus-in-expand">SERVICIOS</h1>
+        </div>
         <!--FIN PORTADA SERVICIOS-->
         <!--TARJETAS DE SERVICIOS-->
-        <section class="container">
-            <div class="d-flex flex-column justify-content-center align-items-center m-2">
-                <div class="card mb-3 justify-content-center" style="max-width: 740px; background-color: #ed8d8e;">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body d-flex flex-column align-items-center justify-content-center mt-md-5">
+            <section class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4 d-flex flex-row justify-content-center align-items-center m-2">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card mt-3 mb-3 justify-content-center" style="background-color: #ed8d8e;" data-aos="flip-down">
+                            <img src="../multimedia/img/semi.jpg" class="card-img-top" alt="esmaltado semipermanente">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="card-title text-center">ESMALTADO SEMIPERMANENTE</h5>
                                 <p class="card-text text-center">El esmaltado semipermanente son dos capas de color</p>
                                 <p class="card-text text-center"><strong>Service cada 15 días</strong></p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex flex-column">
-                            <img src="../multimedia/img/semi.jpg" class="img-fluid rounded-start" alt="esmaltado semi-permanente">
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 justify-content-center" style="max-width: 740px; background-color: #ed8d8e;">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center mt-md-5">
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card mt-3 mb-3 justify-content-center" style="background-color: #ed8d8e;" data-aos="flip-down">
+                            <img src="../multimedia/img/kapping.jpg" class="card-img-top" alt="kapping acrilico">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="card-title text-center">KAPPING ACRILICO</h5>
                                 <p class="card-text text-center">Es una capa fina de acrílico sobre la uña natural, se recomienda para uñas débiles y quebradizas</p>
                                 <p class="card-text text-center"><strong>Service cada 15 días</strong></p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex flex-column">
-                            <img src="../multimedia/img/kapping.jpg" class="img-fluid rounded-start" alt="kapping">
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 justify-content-center" style="max-width: 740px; background-color: #ed8d8e;">
-                    <div class="row g-0">
-                        <div class="col-md-8">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center mt-md-5">
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card mt-3 mb-3 justify-content-center" style="background-color: #ed8d8e;" data-aos="flip-down">
+                            <img src="../multimedia/img/esculpidas.jpg" class="card-img-top" alt="esculpidas acrilicas">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="card-title text-center">ESCULPIDAS ACRILICAS</h5>
                                 <p class="card-text text-center">Es una extensión a gusto del cliente sobre la uña natural</p>
                                 <p class="card-text text-center"><strong>Service cada 21 días </strong></p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex flex-column">
-                            <img src="../multimedia/img/esculpidas.jpg" class="img-fluid rounded-start" alt="esculpidas">
-                        </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
-        </section>
+            </section>
         <!--FIN TARJETAS DE SERVICIOS-->
     </main>
     <!--PIE DE PAGINA-->
@@ -99,5 +88,9 @@
     </footer>
     <!--FIN PIE DE PAGINA-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

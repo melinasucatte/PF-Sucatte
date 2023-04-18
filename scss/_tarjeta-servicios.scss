@@ -22,6 +22,11 @@
 @media(max-width:768px){
     .card{
         height: auto;
+        .card-body{
+          .card-title{
+            font-size: ($font-tamanio/2)-15;
+          }
+        }
     }
 }
 
